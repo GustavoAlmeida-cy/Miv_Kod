@@ -1,0 +1,87 @@
+.cat_container {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background: rgb(97, 250, 199);
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CAT */
+.cat {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: red;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* HEAD */
+.head {
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 70% 70% 60% 60% / 60% 60% 70% 70%;
+  margin-top: 40px;
+  position: relative;
+}
+
+/* EAR */
+.ear {
+  position: absolute;
+  top: -10%;
+  height: 50%;
+  width: 25%;
+  background: white;
+  z-index: 1;
+}
+
+.ear::after {
+  content: "";
+  position: absolute;
+  bottom: 24%;
+  height: 50%;
+  width: 50%;
+  transform-origin: 50% 100%;
+  border-radius: 100% 100% 50% 100% / 100% 100% 50% 100%;
+  background: pink;
+}
+
+.ear-l {
+  left: -7%;
+  border-radius: 70% 30% 0% 0%/100% 100% 0% 0%;
+  transform: rotate(-15deg);
+}
+
+.ear-l::after {
+  right: 10%;
+  transform: rotate(5deg);
+}
+
+.ear-r {
+  right: -7%;
+  border-radius: 30% 70% 0% 0%/100% 100% 0% 0%;
+  transform: rotate(15deg);
+}
+
+.ear-r::after {
+  left: 10%;
+  transform: rotate(-5deg);
+  border-radius: 100% 100% 100% 50% / 100% 100% 100% 50%;
+}
+
+/* FACE */
+.face {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.25);
+  position: absolute;
+  z-index: 9;
+}
+
+
