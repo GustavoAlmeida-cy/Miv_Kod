@@ -37,7 +37,7 @@
   width: 250px;
   height: 250px;
   background: var(--cat-color);
-  border-radius: 70% 70% 60% 60% / 60% 60% 70% 70%;
+  border-radius: 50%;
   margin-top: 40px;
   position: relative;
   z-index: 9;
@@ -52,25 +52,27 @@
 }
 
 .ear-l {
-  left: -1.5%;
-  top: -2%;
+  transform: rotate(15deg);
+  left: 1.5%;
+  top: -4%;
   width: 0;
   height: 0;
-  border-top: 80px solid transparent;
-  border-bottom: 80px solid transparent;
-  border-left: 80px solid var(--cat-ears);
-  border-radius: 100%;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid var(--cat-ears);
+  border-radius: 49.8%;
 }
 
 .ear-r {
-  left: 35%;
-  top: -2%;
+  transform: rotate(-15deg);
+  left: 28.4%;
+  top: -4%;
   width: 0;
   height: 0;
-  border-top: 80px solid transparent;
-  border-bottom: 80px solid transparent;
-  border-right: 80px solid var(--cat-ears);
-  border-radius: 100%;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid var(--cat-ears);
+  border-radius: 49.8%;
 }
 
 /* FACE */
