@@ -129,8 +129,8 @@
 .pupil {
   position: absolute;
   top: 25%;
-  height: 50%;
-  width: 30%;
+  height: 60%;
+  width: 35%;
   background: var(--cat-eye-pupil);
   border-radius: 50%;
   animation: look-around 4s infinite;
