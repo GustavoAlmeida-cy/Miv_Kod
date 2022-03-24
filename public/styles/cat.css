@@ -47,44 +47,30 @@
 .ear {
   position: absolute;
   left: 35%;
-  margin-left: 156.5px;
-  height: 30%;
-  width: 15%;
-  background: var(--cat-ears);
+  margin-left: 26%;
   z-index: 1;
 }
 
-.ear::after {
-  content: "";
-  position: absolute;
-  bottom: 24%;
-  height: 50%;
-  width: 50%;
-  border-radius: 100% 100% 50% 100% / 100% 100% 50% 100%;
-  background: var(--cat-ear-i);
-}
-
 .ear-l {
-  left: -7%;
-  border-radius: 100% 20% 0% 50%/100% 50% 10% 10%;
-  transform: rotate(-20deg);
-}
-
-.ear-l::after {
-  right: 10%;
-  transform: rotate(5deg);
+  left: -1.5%;
+  top: -2%;
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-left: 80px solid var(--cat-ears);
+  border-radius: 100%;
 }
 
 .ear-r {
-  right: -7%;
-  border-radius: 20% 100% 50% 0%/50% 100% 10% 10%;
-  transform: rotate(20deg);
-}
-
-.ear-r::after {
-  left: 10%;
-  transform: rotate(-5deg);
-  border-radius: 100% 100% 100% 50% / 100% 100% 100% 50%;
+  left: 35%;
+  top: -2%;
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-right: 80px solid var(--cat-ears);
+  border-radius: 100%;
 }
 
 /* FACE */
