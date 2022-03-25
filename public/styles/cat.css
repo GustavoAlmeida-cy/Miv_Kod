@@ -6,7 +6,6 @@
   height: 600px;
 
   background: var(--main-background);
-  background: red;
 
   /* COLORS */
   --cat-color: #1a1a1a;
@@ -19,6 +18,7 @@
   --cat-eye-pupil: #1a1a1a;
 
   --cat-mouth: pink;
+  --cat-tongue: rgb(250, 70, 70);
 }
 
 /* HEAD */
@@ -117,6 +117,7 @@
   left: 30%;
 }
 
+/* PUPIL */
 .pupil:after {
   content: "";
   position: absolute;
@@ -194,7 +195,7 @@
 .mouth-mask-l::after {
   content: "";
   position: absolute;
-  right: 68.5px;
+  right: 69.5px;
   top: 130px;
   height: 7px;
   width: 7px;
@@ -227,6 +228,26 @@
   z-index: 3;
 }
 
+.tongue {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  left: 115px;
+  bottom: 30px;
+  border-radius: 40%;
+  background: var(--cat-tongue);
+  animation: tongue 4s infinite;
+}
+
+.tongue-mask {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  left: 100px;
+  bottom: 55px;
+  background: var(--cat-color);
+}
+
 /* BODY */
 .body {
   position: absolute;
@@ -236,6 +257,7 @@
   height: 270px;
   border-radius: 35% 35% 25% 25% / 40% 40% 10% 10%;
   background: var(--cat-color);
+  z-index: 9;
 }
 
 .back {
@@ -315,7 +337,7 @@
 .shadow {
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   right: 0;

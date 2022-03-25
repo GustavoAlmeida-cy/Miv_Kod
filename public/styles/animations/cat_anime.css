@@ -30,15 +30,29 @@
     transform: translate(70%, -25%);
   }
   15% {
-    transform: translate(100%, 25%);
+    transform: translate(70%, 25%);
   }
   20% {
-    transform: translate(100%, 25%);
+    transform: translate(70%, 25%);
   }
   25% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes tongue {
+  0% {
+    transform: translateY(-70%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-70%);
   }
 }
