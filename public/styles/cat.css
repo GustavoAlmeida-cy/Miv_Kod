@@ -12,12 +12,10 @@
 
   --cat-muzzle: pink;
 
-  --cat-ears: #1a1a1a;
-
   --cat-eyes: white;
   --cat-eye-pupil: #1a1a1a;
 
-  --cat-mouth: pink;
+  --cat-mouth: white;
   --cat-tongue: rgb(250, 70, 70);
 }
 
@@ -36,26 +34,25 @@
 /* EARS */
 .ear {
   position: absolute;
-  margin-left: 10%;
-  margin-top: -3%;
+  margin-left: 50px;
+  margin-top: -15px;
   z-index: 1;
 }
 
 .ear-l {
   transform: rotate(15deg);
-  left: 1.5%;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
-  border-left: 100px solid var(--cat-ears);
+  border-left: 100px solid var(--cat-color);
   border-radius: 49.8%;
 }
 
 .ear-r {
   transform: rotate(-15deg);
-  left: 28.4%;
+  left: 150px;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
-  border-right: 100px solid var(--cat-ears);
+  border-right: 100px solid var(--cat-color);
   border-radius: 49.8%;
 }
 
@@ -145,11 +142,11 @@
 /* MOUTH */
 .mouth-l {
   position: absolute;
-  right: 122px;
+  right: 122.5px;
   bottom: 45px;
   height: 50px;
   width: 50px;
-  border: 7px solid #fff;
+  border: 7px solid var(--cat-mouth);
   border-radius: 50%;
   display: inline-block;
   z-index: 0;
@@ -159,11 +156,11 @@
 
 .mouth-r {
   position: absolute;
-  right: 79px;
+  right: 78.5px;
   bottom: 45px;
   height: 50px;
   width: 50px;
-  border: 7px solid #fff;
+  border: 7px solid var(--cat-mouth);
   border-radius: 50%;
   display: inline-block;
   z-index: 0;
@@ -192,15 +189,16 @@
   border-radius: 50%;
 }
 
+/* MOUTH-ENDs */
 .mouth-mask-l::after {
   content: "";
   position: absolute;
-  right: 69.5px;
+  right: 68.5px;
   top: 130px;
   height: 7px;
   width: 7px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--cat-mouth);
   z-index: 3;
 }
 
@@ -212,29 +210,29 @@
   height: 7px;
   width: 7px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--cat-mouth);
   z-index: 3;
 }
 
 .mouth-mask-r::before {
   content: "";
   position: absolute;
-  left: 110.8px;
-  top: 120.8px;
-  height: 7.5px;
-  width: 7.5px;
+  left: 111px;
+  top: 122px;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--cat-mouth);
   z-index: 3;
 }
 
 .tongue {
   position: absolute;
   width: 20px;
-  height: 40px;
+  height: 30px;
   left: 115px;
   bottom: 30px;
-  border-radius: 40%;
+  border-radius: 50%;
   background: var(--cat-tongue);
   animation: tongue 4s infinite;
 }
@@ -244,15 +242,15 @@
   width: 50px;
   height: 20px;
   left: 100px;
-  bottom: 55px;
+  bottom: 55.8px;
   background: var(--cat-color);
 }
 
 /* BODY */
 .body {
   position: absolute;
-  margin-top: -5%;
-  margin-left: 10%;
+  margin-top: -25px;
+  margin-left: 50px;
   width: 250px;
   height: 270px;
   border-radius: 35% 35% 25% 25% / 40% 40% 10% 10%;
@@ -262,8 +260,8 @@
 
 .back {
   position: absolute;
-  margin-top: 5%;
-  margin-left: 45%;
+  margin-top: 25px;
+  margin-left: 220px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -273,8 +271,8 @@
 /* PAWS */
 .paw-l {
   position: absolute;
-  margin-top: 37%;
-  margin-left: 5%;
+  margin-top: 180px;
+  margin-left: 20px;
   width: 110px;
   height: 100px;
   border-radius: 50%;
@@ -283,8 +281,8 @@
 
 .paw-r {
   position: absolute;
-  margin-top: 37%;
-  margin-left: 40%;
+  margin-top: 180px;
+  margin-left: 190px;
   width: 110px;
   height: 100px;
   border-radius: 50%;
@@ -293,8 +291,8 @@
 
 .paw-back-l {
   position: absolute;
-  margin-top: 30%;
-  margin-left: 68%;
+  margin-top: 150px;
+  margin-left: 335px;
   width: 110px;
   height: 100px;
   border-radius: 50%;
@@ -336,7 +334,8 @@
 
 .shadow {
   position: absolute;
-  width: 100%;
+  min-width: 500px;
+  width: 500px;
   height: 120px;
   background: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
