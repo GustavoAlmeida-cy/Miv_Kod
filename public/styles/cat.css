@@ -1,32 +1,24 @@
-/* CAT CONTAINER */
-.cat_container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* CAT */
+.cat {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 600px;
 
+  background: var(--main-background);
+  background: red;
+
+  /* COLORS */
   --cat-color: #1a1a1a;
 
-  --cat-nose: pink;
+  --cat-muzzle: pink;
 
   --cat-ears: #1a1a1a;
-  --cat-ear-i: pink;
 
   --cat-eyes: white;
   --cat-eye-pupil: #1a1a1a;
 
   --cat-mouth: pink;
-}
-
-/* CAT */
-.cat {
-  position: absolute;
-  width: 550px;
-  height: 550px;
-
-  display: flex;
-  justify-content: center;
 }
 
 /* HEAD */
@@ -36,6 +28,7 @@
   background: var(--cat-color);
   border-radius: 50%;
   margin-top: 40px;
+  margin-left: 50px;
   position: relative;
   z-index: 9;
 }
@@ -43,17 +36,14 @@
 /* EARS */
 .ear {
   position: absolute;
-  left: 35%;
-  margin-left: 26%;
+  margin-left: 10%;
+  margin-top: -3%;
   z-index: 1;
 }
 
 .ear-l {
   transform: rotate(15deg);
   left: 1.5%;
-  top: -4%;
-  width: 0;
-  height: 0;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-left: 100px solid var(--cat-ears);
@@ -63,9 +53,6 @@
 .ear-r {
   transform: rotate(-15deg);
   left: 28.4%;
-  top: -4%;
-  width: 0;
-  height: 0;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-right: 100px solid var(--cat-ears);
@@ -76,6 +63,7 @@
 .face {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   position: absolute;
   z-index: 99;
 }
@@ -148,7 +136,7 @@
   height: 6%;
   width: 10%;
   z-index: 99;
-  background: var(--cat-nose);
+  background: var(--cat-muzzle);
   transform: translate(-50%);
   border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
 }
@@ -242,7 +230,8 @@
 /* BODY */
 .body {
   position: absolute;
-  top: 50%;
+  margin-top: -5%;
+  margin-left: 10%;
   width: 250px;
   height: 270px;
   border-radius: 35% 35% 25% 25% / 40% 40% 10% 10%;
@@ -251,19 +240,19 @@
 
 .back {
   position: absolute;
-  top: 60%;
-  left: 54%;
+  margin-top: 5%;
+  margin-left: 45%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background: var(--cat-color);
 }
 
-/* PAW */
+/* PAWS */
 .paw-l {
   position: absolute;
-  bottom: -7%;
-  left: 22%;
+  margin-top: 37%;
+  margin-left: 5%;
   width: 110px;
   height: 100px;
   border-radius: 50%;
@@ -272,29 +261,19 @@
 
 .paw-r {
   position: absolute;
-  bottom: -7%;
-  right: 30%;
+  margin-top: 37%;
+  margin-left: 40%;
   width: 110px;
   height: 100px;
   border-radius: 50%;
   background: var(--cat-color);
 }
 
-.paw-back-r {
-  position: absolute;
-  bottom: 3%;
-  right: 5%;
-  width: 130px;
-  height: 150px;
-  border-radius: 50%;
-  background: var(--cat-color);
-}
-
 .paw-back-l {
   position: absolute;
-  bottom: 1%;
-  right: 4%;
-  width: 140px;
+  margin-top: 30%;
+  margin-left: 68%;
+  width: 110px;
   height: 100px;
   border-radius: 50%;
   background: var(--cat-color);
@@ -303,44 +282,42 @@
 /* TAIL */
 .tail {
   position: absolute;
-  right: 30px;
-  bottom: 15px;
-  height: 400px;
+  margin-left: 180px;
+  margin-top: -110px;
+  height: 350px;
   width: 300px;
   border: 50px solid var(--cat-color);
   border-radius: 50%;
   display: inline-block;
-  z-index: 0;
+  transform: rotate(10deg);
 }
 
 .tail-mask {
   position: absolute;
-  right: 85px;
-  top: 115px;
+  margin-left: 250px;
+  margin-top: -110px;
   height: 100px;
   width: 100px;
   background-color: var(--main-background);
-  z-index: 0;
 }
 
 .tail-end {
   position: absolute;
-  right: 75px;
-  top: 175px;
-  height: 50px;
-  width: 50px;
+  margin-left: 320px;
+  margin-top: -110px;
+  height: 53px;
+  width: 53px;
   border-radius: 50%;
   background-color: var(--cat-color);
   z-index: 1;
 }
 
 .shadow {
-  width: 500px;
-  height: 100px;
   position: absolute;
+  width: 100%;
+  height: 100px;
   background: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-  right: -10px;
-  bottom: -55px;
-  z-index: 0;
+  right: 0;
+  bottom: 0;
 }
