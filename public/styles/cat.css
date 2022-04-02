@@ -6,17 +6,6 @@
   height: 600px;
 
   background: var(--main-background);
-
-  /* COLORS */
-  --cat-color: #1a1a1a;
-
-  --cat-muzzle: pink;
-
-  --cat-eyes: white;
-  --cat-eye-pupil: #1a1a1a;
-
-  --cat-mouth: white;
-  --cat-tongue: rgb(250, 70, 70);
 }
 
 /* HEAD */

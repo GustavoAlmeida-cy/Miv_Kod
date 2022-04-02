@@ -1,0 +1,35 @@
+.nav_menu {
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  width: 140px;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.part {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.p_name {
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+}
+
+.p_color {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}

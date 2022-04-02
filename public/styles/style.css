@@ -1,5 +1,17 @@
 :root {
-  --main-background: rgb(10, 155, 200);
+  /* COLORS */
+  --main-background: #0a9bc8;
+
+  /* CAT COLORS */
+  --cat-color: #1a1a1a;
+
+  --cat-muzzle: #ffc0cb;
+
+  --cat-eyes: #ffffff;
+  --cat-eye-pupil: #1a1a1a;
+
+  --cat-mouth: #ffffff;
+  --cat-tongue: #fa4646;
 }
 
 * {

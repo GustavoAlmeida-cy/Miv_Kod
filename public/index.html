@@ -7,8 +7,13 @@
     <title>C4T</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- css cat -->
     <link rel="stylesheet" href="./styles/cat.css" />
     <link rel="stylesheet" href="./styles/animations/cat_anime.css" />
+    <!-- css menu -->
+    <link rel="stylesheet" href="./styles/animations/nav_menu.css" />
+    <!-- scripts -->
+    <script defer src="./scripts/change_color.js"></script>
   </head>
   <body>
     <!-- cat structure -->
@@ -31,10 +36,10 @@
           <!-- muzzle -->
           <div class="muzzle"></div>
           <!-- mouth -->
-          <div class="mouth-mask-l"></div>
-          <div class="mouth-mask-r"></div>
+          <div class="mask mouth-mask-l"></div>
+          <div class="mask mouth-mask-r"></div>
           <div class="tongue"></div>
-          <div class="tongue-mask"></div>
+          <div class="mask tongue-mask"></div>
           <div class="mouth-r"></div>
           <div class="mouth-l"></div>
         </div>
@@ -45,13 +50,45 @@
       <div class="body"></div>
       <div class="back"></div>
       <!-- paws -->
-      <div class="paw-r"></div>
-      <div class="paw-l"></div>
-      <div class="paw-back-l"></div>
+      <div class="paw paw-r"></div>
+      <div class="paw paw-l"></div>
+      <div class="paw paw-back-l"></div>
       <!-- tail -->
-      <div class="tail"></div>
+      <div class="t tail"></div>
       <div class="tail-mask"></div>
-      <div class="tail-end"></div>
+      <div class="t tail-end"></div>
     </div>
+    <!-- interactivity -->
+    <nav class="nav_menu">
+      <div class="part">
+        <span class="p_name">body:</span>
+        <input type="color" class="p_color cat_body" />
+      </div>
+
+      <div class="part">
+        <span class="p_name">eyes:</span>
+        <input type="color" class="p_color cat_eyes" />
+      </div>
+
+      <div class="part">
+        <span class="p_name">pupils:</span>
+        <input type="color" class="p_color cat_pupils" />
+      </div>
+
+      <div class="part">
+        <span class="p_name">muzzle:</span>
+        <input type="color" class="p_color cat_muzzle" />
+      </div>
+
+      <div class="part">
+        <span class="p_name">mouth:</span>
+        <input type="color" class="p_color cat_mouth" />
+      </div>
+
+      <div class="part">
+        <span class="p_name">tongue:</span>
+        <input type="color" class="p_color cat_tongue" />
+      </div>
+    </nav>
   </body>
 </html>
