@@ -31,3 +31,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.rm_layer {
+  position: absolute;
+  z-index: 97;
+  width: 100%;
+  height: 100%;
+}

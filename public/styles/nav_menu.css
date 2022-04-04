@@ -1,0 +1,111 @@
+/* BTN MENU */
+.btn_menu {
+  background: #ffffff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  top: 25px;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* HAMBURGER BTN */
+.hamburger {
+  width: 45px;
+  height: 5px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.hamburger::before {
+  transform: translateY(-15px);
+}
+
+.hamburger::after {
+  transform: translateY(15px);
+}
+
+.hamburger.active {
+  background: transparent;
+}
+
+.hamburger.active::before {
+  transform: rotate(-45deg);
+}
+
+.hamburger.active::after {
+  transform: rotate(45deg);
+}
+
+/* MENU */
+.nav_menu {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  padding-left: 12px;
+  width: 140px;
+  opacity: 0;
+  border-radius: 10px;
+  z-index: 98;
+  flex-direction: column;
+  top: 40px;
+  left: 5%;
+  transition: top 0.2s linear, opacity 0.2s linear;
+}
+
+.nav_menu.active {
+  display: flex;
+  top: 85px;
+  opacity: 1;
+}
+
+/* MENU PARTS */
+.part {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.part:first-child {
+  margin-top: 15px;
+}
+
+.p_name {
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+}
+
+.nav_menu .p_color {
+  display: none;
+}
+
+.nav_menu.active .p_color {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}

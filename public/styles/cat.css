@@ -85,6 +85,7 @@
   left: 60%;
 }
 
+/* PUPIL */
 .pupil {
   position: absolute;
   top: 25%;
@@ -103,7 +104,6 @@
   left: 30%;
 }
 
-/* PUPIL */
 .pupil:after {
   content: "";
   position: absolute;
@@ -206,7 +206,7 @@
 .mouth-mask-r::before {
   content: "";
   position: absolute;
-  left: 111px;
+  left: 110.5px;
   top: 122px;
   height: 8px;
   width: 8px;
@@ -215,6 +215,7 @@
   z-index: 3;
 }
 
+/* TONGUE */
 .tongue {
   position: absolute;
   width: 20px;
@@ -231,8 +232,72 @@
   width: 50px;
   height: 20px;
   left: 100px;
-  bottom: 55.8px;
+  bottom: 56px;
   background: var(--cat-color);
+}
+
+/* WHISKERS */
+.whisker-1 {
+  position: absolute;
+  background: var(--cat-color);
+  border-radius: 10px;
+  height: 10px;
+  width: 60px;
+  left: -15px;
+  bottom: 75px;
+}
+
+.whisker-1::before,
+.whisker-1::after {
+  content: "";
+  position: absolute;
+  background: var(--cat-color);
+  height: 10px;
+  width: 60px;
+  border-radius: 10px;
+  left: 5px;
+}
+
+.whisker-1::before {
+  bottom: 20px;
+  transform: rotate(10deg);
+}
+
+.whisker-1::after {
+  bottom: -20px;
+  transform: rotate(-10deg);
+}
+
+.whisker-2 {
+  position: absolute;
+  background: var(--cat-color);
+  height: 10px;
+  border-radius: 10px;
+  width: 60px;
+  bottom: 75px;
+  z-index: 1;
+  right: -15px;
+}
+
+.whisker-2::before,
+.whisker-2::after {
+  position: absolute;
+  content: "";
+  background: var(--cat-color);
+  height: 10px;
+  border-radius: 10px;
+  width: 60px;
+  left: -5px;
+}
+
+.whisker-2::before {
+  bottom: 20px;
+  transform: rotate(-10deg);
+}
+
+.whisker-2::after {
+  bottom: -20px;
+  transform: rotate(10deg);
 }
 
 /* BODY */
@@ -321,6 +386,7 @@
   z-index: 1;
 }
 
+/* SHADOWS */
 .shadow {
   position: absolute;
   min-width: 500px;
