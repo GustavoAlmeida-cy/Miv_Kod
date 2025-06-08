@@ -23,7 +23,7 @@
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
     border-left: 50px solid var(--cat-color);
-    border-radius: 49.6%;
+    border-radius: 50%;
   }
 
   .ear-r {
@@ -31,40 +31,41 @@
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
     border-right: 50px solid var(--cat-color);
-    border-radius: 49.6%;
+    border-radius: 50%;
   }
 
   /* MOUTH */
-  .mouth-l {
-    right: 31%;
+  .mouth-l,
+  .mouth-r {
     bottom: 14%;
     height: 20%;
     width: 20%;
     border: 5px solid var(--cat-mouth);
+  }
+
+  .mouth-l {
+    right: 31%;
     transform: rotate(15deg);
   }
 
   .mouth-r {
     left: 31%;
-    bottom: 14%;
-    height: 20%;
-    width: 20%;
-    border: 5px solid var(--cat-mouth);
     transform: rotate(-15deg);
+  }
+
+  .mouth-mask-l,
+  .mouth-mask-r {
+    top: 55%;
+    height: 24%;
+    width: 20%;
   }
 
   .mouth-mask-l {
     left: 30.2%;
-    top: 55%;
-    height: 24%;
-    width: 20%;
   }
 
   .mouth-mask-r {
     left: 50%;
-    top: 55%;
-    height: 24%;
-    width: 20%;
   }
 
   /* MOUTH-ENDs */
@@ -159,55 +160,56 @@
   }
 
   /* PAWS */
+  .paw-l,
+  .paw-r,
+  .paw-back-l {
+    width: 75px;
+    height: 70px;
+  }
+
   .paw-l {
     margin-top: 65%;
     margin-left: 10%;
-    width: 75px;
-    height: 70px;
   }
 
   .paw-r {
     margin-top: 65%;
     margin-left: 42%;
-    width: 75px;
-    height: 70px;
   }
 
   .paw-back-l {
     margin-top: 56%;
     margin-left: 68%;
-    width: 75px;
-    height: 70px;
   }
 
   /* TAIL */
   .tail {
     margin-left: 50%;
     margin-top: 15%;
-    height: 30%;
     width: 45%;
+    height: 30%;
     border: 32px solid var(--cat-color);
   }
 
   .tail-mask {
     margin-left: 48%;
     margin-top: 15%;
-    height: 10.7%;
     width: 26%;
+    height: 10.7%;
   }
 
   .tail-end {
     margin-left: 70%;
     margin-top: 15%;
-    height: 35px;
     width: 35px;
+    height: 35px;
   }
 
   /* SHADOWS */
   .shadow {
-    min-width: 100%;
     width: 100px;
     height: 100px;
+    min-width: 100%;
     right: 0;
     bottom: 17%;
   }

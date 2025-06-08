@@ -1,20 +1,34 @@
+/* === GitHub Link Container === */
 .github {
+  position: fixed; /* fixed para fixar no viewport mesmo com scroll */
+  top: 30px;
+  right: 6%;
+
   width: 60px;
   height: 60px;
-  position: absolute;
-  right: 6%;
-  top: 30px;
+
   cursor: pointer;
   z-index: 99;
+  transition: transform 0.2s ease;
 }
 
+.github:hover,
+.github:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+/* === GitHub Icon Image === */
 .github img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+
   opacity: 0.85;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease;
 }
 
-.github img:hover {
+.github img:hover,
+.github img:focus {
   opacity: 0.7;
 }

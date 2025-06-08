@@ -1,40 +1,47 @@
+/* === Variables (CSS Custom Properties) === */
 :root {
-  /* COLORS */
-  --main-background: #0a9bc8;
+  /* Background color */
+  --main-background: #dce6f0;
 
-  /* CAT COLORS */
+  /* Cat colors */
   --cat-color: #1a1a1a;
-
   --cat-muzzle: #ffc0cb;
-
   --cat-eyes: #ffffff;
   --cat-eye-pupil: #1a1a1a;
-
   --cat-mouth: #ffffff;
   --cat-tongue: #fa4646;
 }
 
-* {
+/* === Global Reset and Base Styles === */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* === Body Styling === */
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: var(--main-background);
+  background-color: var(--main-background);
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* === Overlay Layer === */
 .rm_layer {
-  position: absolute;
+  position: fixed; /* fixed melhor para overlays que cobrem a viewport inteira */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 97;
-  width: 100%;
-  height: 100%;
+  pointer-events: none; /* evita capturar cliques caso não queira interatividade */
+  background: transparent;
 }

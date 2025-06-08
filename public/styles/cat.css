@@ -1,26 +1,24 @@
-/* CAT */
+/* === CAT CONTAINER === */
 .cat {
   position: relative;
   overflow: hidden;
   width: 500px;
   height: 600px;
-
   background: var(--main-background);
 }
 
-/* HEAD */
+/* === HEAD === */
 .head {
   width: 250px;
   height: 250px;
   background: var(--cat-color);
   border-radius: 50%;
-  margin-top: 40px;
-  margin-left: 50px;
+  margin: 40px 0 0 50px;
   position: relative;
   z-index: 9;
 }
 
-/* EARS */
+/* === EARS === */
 .ear {
   position: absolute;
   margin-left: 50px;
@@ -37,15 +35,15 @@
 }
 
 .ear-r {
-  transform: rotate(-15deg);
   left: 150px;
+  transform: rotate(-15deg);
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-right: 100px solid var(--cat-color);
   border-radius: 49.8%;
 }
 
-/* FACE */
+/* === FACE === */
 .face {
   width: 100%;
   height: 100%;
@@ -54,7 +52,7 @@
   z-index: 99;
 }
 
-/* EYES */
+/* === EYES === */
 .eye {
   position: absolute;
   top: 25%;
@@ -62,17 +60,17 @@
   width: 30%;
   z-index: 2;
   background: var(--cat-eyes);
-  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  border-radius: 50% / 60% 60% 40% 40%;
 }
 
 .eye::after {
-  position: absolute;
   content: "";
+  position: absolute;
   top: -10px;
   left: 0;
-  height: 0%;
+  height: 0;
   width: 100%;
-  border-radius: 0 0 50% 50%/0 0 40% 40%;
+  border-radius: 0 0 50% 50% / 0 0 40% 40%;
   background: var(--cat-color);
   animation: blink 4s infinite ease-in;
 }
@@ -85,7 +83,7 @@
   left: 60%;
 }
 
-/* PUPIL */
+/* === PUPILS === */
 .pupil {
   position: absolute;
   top: 25%;
@@ -104,7 +102,7 @@
   left: 30%;
 }
 
-.pupil:after {
+.pupil::after {
   content: "";
   position: absolute;
   top: 30%;
@@ -115,7 +113,7 @@
   background: var(--cat-eyes);
 }
 
-/* MUZZLE */
+/* === MUZZLE === */
 .muzzle {
   position: absolute;
   top: 58%;
@@ -124,14 +122,14 @@
   width: 10%;
   z-index: 99;
   background: var(--cat-muzzle);
-  transform: translate(-50%);
-  border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
+  transform: translateX(-50%);
+  border-radius: 50% / 30% 30% 70% 70%;
 }
 
-/* MOUTH */
-.mouth-l {
+/* === MOUTH === */
+.mouth-l,
+.mouth-r {
   position: absolute;
-  right: 122.5px;
   bottom: 45px;
   height: 50px;
   width: 50px;
@@ -139,68 +137,57 @@
   border-radius: 50%;
   display: inline-block;
   z-index: 0;
+}
 
+.mouth-l {
+  right: 122.5px;
   transform: rotate(15deg);
 }
 
 .mouth-r {
-  position: absolute;
   right: 78.5px;
-  bottom: 45px;
-  height: 50px;
-  width: 50px;
-  border: 7px solid var(--cat-mouth);
-  border-radius: 50%;
-  display: inline-block;
-  z-index: 0;
   transform: rotate(-15deg);
 }
 
-.mouth-mask-l {
+/* === MOUTH MASKS === */
+.mouth-mask-l,
+.mouth-mask-r {
   position: absolute;
-  right: 10px;
   top: 50px;
   height: 135px;
   width: 150px;
   background-color: var(--cat-color);
-  z-index: 1;
   border-radius: 50%;
+  z-index: 1;
+}
+
+.mouth-mask-l {
+  right: 10px;
 }
 
 .mouth-mask-r {
-  position: absolute;
   left: 10px;
-  top: 50px;
-  height: 135px;
-  width: 150px;
-  background-color: var(--cat-color);
-  z-index: 1;
-  border-radius: 50%;
 }
 
-/* MOUTH-ENDs */
-.mouth-mask-l::after {
-  content: "";
-  position: absolute;
-  right: 68.5px;
-  top: 130px;
-  height: 7px;
-  width: 7px;
-  border-radius: 50%;
-  background-color: var(--cat-mouth);
-  z-index: 3;
-}
-
+.mouth-mask-l::after,
 .mouth-mask-r::after {
   content: "";
   position: absolute;
-  left: 68px;
-  top: 130px;
   height: 7px;
   width: 7px;
   border-radius: 50%;
   background-color: var(--cat-mouth);
   z-index: 3;
+}
+
+.mouth-mask-l::after {
+  right: 68.5px;
+  top: 130px;
+}
+
+.mouth-mask-r::after {
+  left: 68px;
+  top: 130px;
 }
 
 .mouth-mask-r::before {
@@ -215,13 +202,13 @@
   z-index: 3;
 }
 
-/* TONGUE */
+/* === TONGUE === */
 .tongue {
   position: absolute;
-  width: 20px;
-  height: 30px;
   left: 115px;
   bottom: 30px;
+  width: 20px;
+  height: 30px;
   border-radius: 50%;
   background: var(--cat-tongue);
   animation: tongue 4s infinite;
@@ -229,22 +216,27 @@
 
 .tongue-mask {
   position: absolute;
-  width: 50px;
-  height: 20px;
   left: 100px;
   bottom: 56px;
+  width: 50px;
+  height: 20px;
   background: var(--cat-color);
 }
 
-/* WHISKERS */
-.whisker-1 {
+/* === WHISKERS === */
+.whisker-1,
+.whisker-2 {
   position: absolute;
   background: var(--cat-color);
-  border-radius: 10px;
   height: 10px;
   width: 60px;
+  border-radius: 10px;
+}
+
+.whisker-1 {
   left: -15px;
   bottom: 75px;
+  z-index: 0;
 }
 
 .whisker-1::before,
@@ -269,24 +261,19 @@
 }
 
 .whisker-2 {
-  position: absolute;
-  background: var(--cat-color);
-  height: 10px;
-  border-radius: 10px;
-  width: 60px;
+  right: -15px;
   bottom: 75px;
   z-index: 1;
-  right: -15px;
 }
 
 .whisker-2::before,
 .whisker-2::after {
-  position: absolute;
   content: "";
+  position: absolute;
   background: var(--cat-color);
   height: 10px;
-  border-radius: 10px;
   width: 60px;
+  border-radius: 10px;
   left: -5px;
 }
 
@@ -300,15 +287,15 @@
   transform: rotate(10deg);
 }
 
-/* BODY */
+/* === BODY === */
 .body {
   position: absolute;
   margin-top: -25px;
   margin-left: 50px;
   width: 250px;
   height: 270px;
-  border-radius: 35% 35% 25% 25% / 40% 40% 10% 10%;
   background: var(--cat-color);
+  border-radius: 35% 35% 25% 25% / 40% 40% 10% 10%;
   z-index: 9;
 }
 
@@ -318,42 +305,37 @@
   margin-left: 220px;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   background: var(--cat-color);
+  border-radius: 50%;
 }
 
-/* PAWS */
-.paw-l {
+/* === PAWS === */
+.paw-l,
+.paw-r,
+.paw-back-l {
   position: absolute;
-  margin-top: 180px;
-  margin-left: 20px;
   width: 110px;
   height: 100px;
-  border-radius: 50%;
   background: var(--cat-color);
+  border-radius: 50%;
+}
+
+.paw-l {
+  margin-top: 180px;
+  margin-left: 20px;
 }
 
 .paw-r {
-  position: absolute;
   margin-top: 180px;
   margin-left: 190px;
-  width: 110px;
-  height: 100px;
-  border-radius: 50%;
-  background: var(--cat-color);
 }
 
 .paw-back-l {
-  position: absolute;
   margin-top: 150px;
   margin-left: 335px;
-  width: 110px;
-  height: 100px;
-  border-radius: 50%;
-  background: var(--cat-color);
 }
 
-/* TAIL */
+/* === TAIL === */
 .tail {
   position: absolute;
   margin-left: 180px;
@@ -362,8 +344,8 @@
   width: 300px;
   border: 50px solid var(--cat-color);
   border-radius: 50%;
-  display: inline-block;
   transform: rotate(10deg);
+  display: inline-block;
 }
 
 .tail-mask {
@@ -381,15 +363,14 @@
   margin-top: -110px;
   height: 53px;
   width: 53px;
-  border-radius: 50%;
   background-color: var(--cat-color);
+  border-radius: 50%;
   z-index: 1;
 }
 
-/* SHADOWS */
+/* === SHADOW === */
 .shadow {
   position: absolute;
-  min-width: 500px;
   width: 500px;
   height: 120px;
   background: rgba(0, 0, 0, 0.15);

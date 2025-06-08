@@ -1,14 +1,26 @@
-const btn_menu = document.querySelector(".btn_menu");
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".nav_menu");
-const rm_layer = document.querySelector(".rm_layer");
+// menu.js
 
-btn_menu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-  hamburger.classList.toggle("active");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const btnMenu = document.querySelector(".btn_menu");
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav_menu");
+  const rmLayer = document.querySelector(".rm_layer");
 
-rm_layer.addEventListener("click", () => {
-  menu.classList.remove("active");
-  hamburger.classList.remove("active");
+  if (!btnMenu || !hamburger || !navMenu || !rmLayer) {
+    console.warn("Menu: Um ou mais elementos não foram encontrados.");
+    return;
+  }
+
+  const toggleMenu = () => {
+    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  };
+
+  const closeMenu = () => {
+    navMenu.classList.remove("active");
+    hamburger.classList.remove("active");
+  };
+
+  btnMenu.addEventListener("click", toggleMenu);
+  rmLayer.addEventListener("click", closeMenu);
 });
