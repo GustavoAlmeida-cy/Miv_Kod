@@ -1,10 +1,32 @@
-# Miv_Kod
+# 🐱 Miv_Kod
 
-A simple school project that was created to be part of an artistic representation, involving (art, technology and interaction) 
-and use those things linking to a vocation, and in this case the vocation that was chosed is a web developer.
+<p align="center">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&style=for-the-badge&logoColor=white" alt="HTML5" />
+  </a>
+  
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&style=for-the-badge&logoColor=white" alt="CSS3" />
+  </a>
+  
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&style=for-the-badge&logoColor=black" alt="JavaScript" />
+  </a>
+</p>
 
 ---
-"Miv_Kod" was made with three of the most fundamental tecnologys involving web developement, as
-HTML, CSS and JavaScript. 
-HTML and CSS was used to make the interface and mainly the cat, JavaScript was used to create the interactions 
-enable user to chose the colors of cat, and to interact with the menu.
+
+## 🎨 Sobre o Projeto
+
+**Miv_Kod** é um projeto escolar simples, criado como parte de uma representação artística que une **arte, tecnologia e interação**.
+
+O projeto conecta esses elementos a uma vocação — neste caso, a vocação escolhida foi a de **desenvolvedor web**.
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+O **Miv_Kod** foi desenvolvido utilizando três das tecnologias fundamentais para desenvolvimento web:
+
+- **HTML** e **CSS**: utilizados para construir a interface, com destaque para a criação do gato.
+- **JavaScript**: responsável por implementar as interações, permitindo ao usuário escolher as cores do gato e interagir com o menu.
