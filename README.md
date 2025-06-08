@@ -37,20 +37,20 @@ O **Miv_Kod** foi desenvolvido utilizando três das tecnologias fundamentais par
 
 ## 🖼️ Demonstrações
 
-Abaixo estão algumas capturas de tela do projeto em funcionamento, ilustrando a proposta visual e as funcionalidades interativas da aplicação.
+Veja abaixo duas capturas de tela que ilustram o funcionamento do projeto:
 
-### 📸 Visão Geral
+### 📸 Interface Principal
 
-A primeira imagem apresenta a interface principal do projeto. Nela, é possível ver a ilustração central do gato, estilizada com HTML e CSS, e os elementos que compõem a cena. A construção visual foi cuidadosamente pensada para representar de forma criativa o conceito de um desenvolvedor web, de maneira acessível e envolvente. Todo o layout é responsivo e preparado para diferentes tamanhos de tela.
+A primeira imagem mostra a tela inicial do projeto, com a ilustração do gato criada com HTML e CSS. O layout é responsivo e representa de forma criativa a vocação de desenvolvedor web.
 
 <p align="center">
-  <img src="./public/images/demos/screenshot-1.png" alt="Demonstração 1" width="400" />
+  <img src="./public/images/demos/screenshot-1.png" alt="Interface do projeto" width="600" />
 </p>
 
-### 🎛️ Interatividade e Customização
+### 🎛️ Customização Interativa
 
-A segunda imagem mostra o menu de customização aberto, que permite ao usuário interagir com o projeto alterando as cores de diferentes partes do gato — como o corpo, os olhos, as pupilas, o focinho, a boca e a língua. Essa funcionalidade é possível graças ao uso de JavaScript, e proporciona uma experiência divertida e educativa, incentivando a experimentação com estilos e cores diretamente no navegador.
+A segunda imagem destaca o menu de customização, que permite ao usuário alterar as cores do gato (olhos, boca, focinho, entre outros) de forma interativa usando JavaScript. Uma funcionalidade simples e divertida que incentiva a criatividade.
 
 <p align="center">
-  <img src="./public/images/demos/screenshot-2.png" alt="Demonstração 2" width="400" />
+  <img src="./public/images/demos/screenshot-2.png" alt="Customização interativa" width="600" />
 </p>
